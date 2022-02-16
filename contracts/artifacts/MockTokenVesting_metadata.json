@@ -525,6 +525,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					}
+				],
+				"name": "setCurrentTime",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "newOwner",
 						"type": "address"
@@ -566,12 +579,6 @@
 				},
 				"computeVestingScheduleIdForAddressAndIndex(address,uint256)": {
 					"details": "Computes the vesting schedule identifier for an address and an index."
-				},
-				"constructor": {
-					"details": "Creates a vesting contract.",
-					"params": {
-						"token_": "address of the ERC20 token contract"
-					}
 				},
 				"getLastVestingScheduleForHolder(address)": {
 					"details": "Returns the last vesting schedule for a given holder address."
@@ -639,6 +646,7 @@
 					}
 				}
 			},
+			"title": "MockTokenVesting WARNING: use only for testing and debugging purpose",
 			"version": 1
 		},
 		"userdoc": {
@@ -674,7 +682,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/vestingContract.sol": "TokenVesting"
+			"contracts/TestVest.sol": "MockTokenVesting"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -750,6 +758,14 @@
 			"urls": [
 				"bzz-raw://973868f808e88e21a1a0a01d4839314515ee337ad096286c88e41b74dcc11fc2",
 				"dweb:/ipfs/QmfYuZxRfx2J2xdk4EXN7jKg4bUYEMTaYk9BAw9Bqn4o2Y"
+			]
+		},
+		"contracts/TestVest.sol": {
+			"keccak256": "0x7e0bc48bd1aa93221dc62a24cf27a3be03459a1b1bb26e9cb914b521134157ca",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://a1c90c87f3cdc7ba0eebbc2a378d19d508f6f752ef41e806bc663318bac2a698",
+				"dweb:/ipfs/QmUHRnkfWNA1zDNKmEiYPnakzGYo8YZe7fS65gc8AkRgmB"
 			]
 		},
 		"contracts/vestingContract.sol": {

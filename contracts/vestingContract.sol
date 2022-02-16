@@ -124,6 +124,12 @@ contract TokenVesting is Ownable, ReentrancyGuard{
 
     /**
     *@notice Creates a new vesting schedule for a beneficiary.
+    *@param _beneficiary address of the beneficiary to whom vested tokens are transferred
+    *@param _start startr time of vesting period
+    *@param _cliff duration in seconds of the cliff in which tokens will begin to vest
+    *@param _duration in seconds of the period in which the tokens will be vested
+    *@param _revocable is whether we can revoke vesting or not
+    *@param _amount total amount of tokens to be released at the end of the vesting
     */
 
     function createVestingSchedule(
@@ -260,6 +266,7 @@ contract TokenVesting is Ownable, ReentrancyGuard{
         return keccak256(abi.encodePacked(holder, index));
     }
 
+    
     /**
     *@dev Computees the releasable amount of tokens for a vesting schedule.
     *@return the amount of releasable tokens
