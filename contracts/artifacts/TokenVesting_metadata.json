@@ -573,6 +573,16 @@
 						"token_": "address of the ERC20 token contract"
 					}
 				},
+				"createVestingSchedule(address,uint256,uint256,uint256,uint256,bool,uint256)": {
+					"params": {
+						"_amount": "total amount of tokens to be released at the end of the vesting",
+						"_beneficiary": "address of the beneficiary to whom vested tokens are transferred",
+						"_cliff": "duration in seconds of the cliff in which tokens will begin to vest",
+						"_duration": "in seconds of the period in which the tokens will be vested",
+						"_revocable": "is whether we can revoke vesting or not",
+						"_start": "start time of vesting period"
+					}
+				},
 				"getLastVestingScheduleForHolder(address)": {
 					"details": "Returns the last vesting schedule for a given holder address."
 				},
@@ -753,11 +763,11 @@
 			]
 		},
 		"contracts/vestingContract.sol": {
-			"keccak256": "0xfbc5829da9098b17c9c2b165e65a46168afb4d6fc6ce92e174d114b778cd13f6",
+			"keccak256": "0x63f7be8189e7dfd5470b2419723e209360025abd373c11f893b94243bb6b123d",
 			"license": "Apache-2.0",
 			"urls": [
-				"bzz-raw://44f7f9c78cc74230a033f310893da17e884763168c25bee342f68d03cf3bbbdd",
-				"dweb:/ipfs/QmRXktTQBJC78RderjKGicbasYLWRQp2HgDpy7AcK2dwjo"
+				"bzz-raw://003a9e45b5ebede12ca5837866b559a62d9ed18366876d84a819cd96703f7bcd",
+				"dweb:/ipfs/Qmbs4y9J4WYnUMk1QYtHaVdgLPSV4HXXpejaBiKm8zVRNM"
 			]
 		}
 	},

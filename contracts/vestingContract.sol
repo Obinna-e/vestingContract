@@ -125,7 +125,7 @@ contract TokenVesting is Ownable, ReentrancyGuard{
     /**
     *@notice Creates a new vesting schedule for a beneficiary.
     *@param _beneficiary address of the beneficiary to whom vested tokens are transferred
-    *@param _start startr time of vesting period
+    *@param _start start time of vesting period
     *@param _cliff duration in seconds of the cliff in which tokens will begin to vest
     *@param _duration in seconds of the period in which the tokens will be vested
     *@param _revocable is whether we can revoke vesting or not
